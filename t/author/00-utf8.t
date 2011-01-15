@@ -4,15 +4,13 @@ use lib 't/lib';
 use Test::More;
 use JSON::Any;
 use HTTP::Request::Common;
+use utf8;
 
 BEGIN {
     use_ok 'Catalyst::Test', 'Simple';
 }
 
-my $param = {
-    bar => 1,
-    baz => 1,
-};
+my $param = { foo => 'áçéò' };
 my ( $res, $ctx ) = ctx_request(
     '/?' . 'param='
     . JSON::Any->new->encode($param)

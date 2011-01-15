@@ -1,6 +1,7 @@
 Changes
 inc/Module/AutoInstall.pm
 inc/Module/Install.pm
+inc/Module/Install/AuthorTests.pm
 inc/Module/Install/AutoInstall.pm
 inc/Module/Install/Base.pm
 inc/Module/Install/Can.pm
@@ -19,5 +20,6 @@ META.yml
 README
 t/00-load.t
 t/01-json_decoder.t
+t/author/00-utf8.t
 t/lib/Simple.pm
 t/lib/Simple/Controller/Root.pm

@@ -1,5 +1,6 @@
 use inc::Module::Install;
 use Module::Install::ReadmeFromPod;
+use Module::Install::AuthorTests;
 
 name     'Catalyst-TraitFor-Request-DecodedParams';
 all_from 'lib/Catalyst/TraitFor/Request/DecodedParams.pm';
@@ -15,6 +16,8 @@ requires 'Moose';
 requires 'namespace::autoclean';
 requires 'JSON::Any';
 requires 'Try::Tiny';
+
+author_tests('t/author');
 
 auto_install;
 

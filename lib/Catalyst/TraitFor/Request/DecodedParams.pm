@@ -3,7 +3,7 @@ package Catalyst::TraitFor::Request::DecodedParams;
 use Moose::Role;
 use namespace::autoclean;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 requires qw/_build_params_decoder _do_decode_params/;
 
